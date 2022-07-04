@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: greet-with-name
         id: greet-step-id
-        uses: octocat/hello-world-javascript-action@v1.1
+        uses: actions/hello-world-javascript-action@v1.1
         with:
           who-to-greet: Ganesh
       - name: prints-time
