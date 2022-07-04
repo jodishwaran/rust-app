@@ -1,15 +1,15 @@
-name: simple js action
+# name: simple js action
 
-on: [push]
+# on: [push]
 
-jobs:
-  runs-simple-js:
-    runs-on: ubuntu-latest
-    steps:
-      - name: greet-with-name
-        id: greet-step-id
-        uses: actions/hello-world-javascript-action@v1.1
-        with:
-          who-to-greet: Ganesh
-      - name: prints-time
-        run: echo "hello ${{steps.greet-step-id.outputs.time}}"
+# jobs:
+#   runs-simple-js:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: greet-with-name
+#         id: greet-step-id
+#         uses: actions/hello-world-javascript-action@v1.1
+#         with:
+#           who-to-greet: Ganesh
+#       - name: prints-time
+#         run: echo "hello ${{steps.greet-step-id.outputs.time}}"
